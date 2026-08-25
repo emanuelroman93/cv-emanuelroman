@@ -1,0 +1,113 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Heading titulares";
+    src: url("fonts/HeadingNowTrial-57Extrabold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heading secciones";
+    src: url("fonts/HeadingNowTrial-54Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heading textos";
+    src: url("fonts/CutiveMono-Regular.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Heading titulares", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Heading secciones", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Heading textos", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+}
+
+ul {
+    font-family: "Heading textos", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 136px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    background-color: #053920;
+}
+
+header {
+    flex-shrink: 0;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 1rem;
+}
+
+header img {
+    display: block;
+}
+
+main {
+    text-align: left;
+    text-wrap: balance;
+    grid-column: 2;
+    grid-row: 1;
+    color: #cac7c7;   
+}
+
+footer {
+    font-family: "Heading secciones", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-wrap: balance;
+    grid-column: 2;
+    grid-row: 2;
+    color: #cac7c7;   
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #cac7c7;   
+}
+
+footer li img {
+    display: block;
+}
+
+footer a {
+    color: orange;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: rgb(184, 127, 22);
+}
