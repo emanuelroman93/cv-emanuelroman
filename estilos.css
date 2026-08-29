@@ -1,6 +1,10 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
+html {
+  background-color: #053920;
+}
+
 @font-face {
     font-family: "Heading titulares";
     src: url("fonts/HeadingNowTrial-57Extrabold.ttf") format("truetype");
@@ -38,7 +42,7 @@ h3 {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    line-height: 0.8rem;
+    line-height: 1.4rem;
 }
 
 ul {
@@ -49,11 +53,13 @@ ul {
 
 body {
     display: grid;
-    grid-template-columns: 136px 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 2rem;
-    row-gap: 1rem;
-    background-color: #053920;
+	grid-template-columns: 136px 1fr;
+	grid-template-rows: auto auto;
+	column-gap: 2rem;
+	row-gap: 1rem;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
 header {
