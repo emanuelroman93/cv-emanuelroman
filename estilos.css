@@ -54,10 +54,10 @@ ul {
 body {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 2rem; /*este es un tamaño tipográfico y se aplica en contextos de tipografía, acá no hay tipo involucrada*/
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem; /*idem gap*/
 }
 
 header {
