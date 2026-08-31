@@ -3,6 +3,7 @@
 
 html {
     background-color: #053920;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -36,13 +37,15 @@ h2 {
     font-family: "Heading secciones", sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
+    margin-top: 5rem;
 }
 
 h3 {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -52,12 +55,46 @@ ul {
 }
 
 body {
+    margin: 0;
+}
+
+.fila {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.barra-nav {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #000000;
+    padding: 0.6rem;
+}
+
+.barra-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.barra-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Heading secciones", sans-serif;
+}
+
+.barra-nav a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -88,6 +125,7 @@ footer {
     font-weight: bold;
     text-wrap: balance;
     color: #cac7c7;
+    margin-top: rem;
 }
 
 footer ul {
@@ -115,4 +153,22 @@ footer a {
 
 footer a:visited {
     color: rgb(184, 127, 22);
+}
+
+.barra-final {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    font-family: "Heading secciones", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
