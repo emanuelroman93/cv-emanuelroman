@@ -16,21 +16,21 @@ html {
 @font-face {
     font-family: "Heading secciones";
     src: url("fonts/HeadingNowTrial-54Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: bold;
 }
 
 @font-face {
     font-family: "Heading textos";
     src: url("fonts/CutiveMono-Regular.ttf") format("truetype");
     font-weight: bolder;
-    font-style: normal;
+    font-style: bolder;
 }
 
 h1 {
     font-family: "Heading titulares", sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h2 {
@@ -43,16 +43,31 @@ h2 {
 h3 {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: bolder;
     line-height: 1.3rem;
     margin-bottom: 1rem;
 }
 
-ul {
+main {
+    text-align: left;
+    text-wrap: balance;
+    color: #cac7c7;
+}
+
+main ul {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
+    line-height: 1.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+main ul li {
+    margin-bottom: 1rem;
+}
+
 
 body {
     margin: 0;
@@ -97,6 +112,15 @@ body {
     text-decoration: underline;
 }
 
+.subtitulo-header {
+    font-family: "Heading textos", sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: rgb(226, 178, 88);
+    margin-top: 0.6rem;
+    line-height: 0.8rem;
+}
+
 header {
     flex-shrink: 0;
     width: 136px;
@@ -113,11 +137,7 @@ header img {
     row-gap: 1rem;
 }
 
-main {
-    text-align: left;
-    text-wrap: balance;
-    color: #cac7c7;
-}
+
 
 footer {
     font-family: "Heading secciones", sans-serif;
@@ -125,7 +145,7 @@ footer {
     font-weight: bold;
     text-wrap: balance;
     color: #cac7c7;
-    margin-top: rem;
+    margin-top: 5rem;
 }
 
 footer ul {
@@ -170,5 +190,22 @@ footer a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+}
 
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 0;
+}
+
+#habilidades li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
 }
