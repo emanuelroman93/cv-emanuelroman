@@ -76,10 +76,10 @@ body {
 .fila {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 32px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .barra-nav {
@@ -90,16 +90,16 @@ body {
     margin-left: -50vw;
     margin-right: -50vw;
     background-color: #000000;
-    padding: 0.6rem;
+    padding: 12px;
 }
 
 .barra-nav ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
     list-style: none;
     margin: 0;
-    padding: 1rem 0;
+    padding: 16px 0;
 }
 
 .barra-nav a {
@@ -134,7 +134,7 @@ header img {
 .contenido {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 16px;
 }
 
 
@@ -157,7 +157,7 @@ footer ul {
 footer li {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
     margin-bottom: 0.5rem;
     color: #cac7c7;
 }
@@ -178,7 +178,7 @@ footer a:visited {
 .barra-final {
     background-color: #000000;
     color: #ffffff;
-    padding: 2rem 0;
+    padding: 32px;
     margin-top: 5rem;
     width: 100vw;
     position: relative;
@@ -190,7 +190,7 @@ footer a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 
@@ -198,7 +198,7 @@ footer a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 150px;
     padding: 0;
 }
 
@@ -206,6 +206,6 @@ footer a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 120px;
     text-align: center;
 }
