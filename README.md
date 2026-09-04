@@ -5,5 +5,5 @@ El diseño del curriculum esta por un lado enmarcado dentro de mis limitaciones 
 (Se puede acceder a la misma dentro del CV).
 
 ## Especificaciones técnicas
-** Tamaño de pantalla 3200x2000px (Lenovo Yoga Pro i9)
-** Editor de código: Visual Studio Code
+- Tamaño de pantalla 3200x2000px (Lenovo Yoga Pro i9)
+- Editor de código: Visual Studio Code
