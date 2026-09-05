@@ -3,6 +3,7 @@
 
 html {
     background-color: #053920;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -15,49 +16,109 @@ html {
 @font-face {
     font-family: "Heading secciones";
     src: url("fonts/HeadingNowTrial-54Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: bold;
 }
 
 @font-face {
     font-family: "Heading textos";
     src: url("fonts/CutiveMono-Regular.ttf") format("truetype");
     font-weight: bolder;
-    font-style: normal;
+    font-style: bolder;
 }
 
 h1 {
     font-family: "Heading titulares", sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h2 {
     font-family: "Heading secciones", sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
+    margin-top: 5rem;
 }
 
 h3 {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 1.4rem;
+    font-weight: bolder;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-ul {
+main {
+    text-align: left;
+    text-wrap: balance;
+    color: #cac7c7;
+}
+
+main ul {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
+    line-height: 1.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+main ul li {
+    margin-bottom: 1rem;
+}
+
+
 body {
+    margin: 0;
+}
+
+.fila {
     display: flex;
     flex-direction: row;
-    gap: 2rem; /*este es un tamaño tipográfico y se aplica en contextos de tipografía, acá no hay tipo involucrada*/
+    gap: 32px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem; /*idem gap*/
+    padding: 32px;
+}
+
+.barra-nav {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #000000;
+    padding: 12px;
+}
+
+.barra-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.barra-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Heading secciones", sans-serif;
+}
+
+.barra-nav a:hover {
+    text-decoration: underline;
+}
+
+.subtitulo-header {
+    font-family: "Heading textos", sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: rgb(226, 178, 88);
+    margin-top: 0.6rem;
+    line-height: 0.8rem;
 }
 
 header {
@@ -73,14 +134,10 @@ header img {
 .contenido {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 16px;
 }
 
-main {
-    text-align: left;
-    text-wrap: balance;
-    color: #cac7c7;
-}
+
 
 footer {
     font-family: "Heading secciones", sans-serif;
@@ -88,6 +145,7 @@ footer {
     font-weight: bold;
     text-wrap: balance;
     color: #cac7c7;
+    margin-top: 5rem;
 }
 
 footer ul {
@@ -99,7 +157,7 @@ footer ul {
 footer li {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
     margin-bottom: 0.5rem;
     color: #cac7c7;
 }
@@ -115,4 +173,39 @@ footer a {
 
 footer a:visited {
     color: rgb(184, 127, 22);
+}
+
+.barra-final {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 32px;
+    margin-top: 5rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    font-family: "Heading secciones", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 0;
+}
+
+#habilidades li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    text-align: center;
 }

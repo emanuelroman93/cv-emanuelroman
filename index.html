@@ -2,49 +2,81 @@
 <html>
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>CV Emanuel A Roman</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/faviconrayito.svg">
     <!--falta favicon!!-->
 </head>
 
 <body>
-        <header><img src="imgs/foto-cv-ema.jpg" alt="Foto de CV" width="136" height="181" />
+    <nav class="barra-nav">
+        <ul>
+            <li><a href="#formacion">FORMACIÓN</a></li>
+            <li><a href="#experiencia">EXPERIENCIA</a></li>
+            <li><a href="#habilidades">HABILIDADES</a></li>
+        </ul>
+    </nav>
+    <div class="fila">
+        <header>
+            <img src="imgs/foto-cv-ema.jpg" alt="Foto de CV" width="136" height="181" />
+            <p class="subtitulo-header"> "IT'S A LONG WAY TO THE TOP, IF YOU WANNA RN'R"</p>
         </header>
         <div class="contenido">
-        <main>
-            <section>
-                <h1>Emanuel Alvarez Roman</h1> <!--este h1 pertenece semátincamente a esta sección o está medio desubicado entre la formación académica? No hay otra etiqueta en la que quede mejor el título de la página?-->
-                <h2>FORMACIÓN ACADÉMICA</h2>
-                <h3>Profesor de Inglés - ISFD N°18 (Título honorífico).</h3> <!--esto no debería ser un subtítulo porque no tiene caracter de tal, es en realidad el ítem de una lista-->
-                <h3>Licenciado en Gestión Educativa - UNLa (Título honorífico).</h3>
-                <h3>Estudiante de Diseño y Comunicación Visual - UNLa (29 materias aprobadas de 36).</h3>
-            </section>
-            <section>
-                <h2>EXPERIENCIA LABORAL</h2>
-                <h3>Publishing administrativo y diseño editorial en Mawz Records e Indyana Records (2021 - Presente).</h3>
-                <h3>Diseño gráfico y Community Manager en Boris Store (2018 - Presente).</h3>
-                <h3>Asistente de cátedra en Lecto Comprensión en Inglés - Modulo <!--ortografía!!!--> 1 y 2 (Banfi) | UBA - Facultad de Piscologia <!--ortografía!!!--> (2024 - Presente).</h3> <!--ortografía!!!-->
-                <h3>Profesor de inglés de escuela secundaria y técnica en Provincia de Buenos Aires (2023 - Presente).</h3>
-                <h3>Profesor de inglés para el programa Becas Progresar Manuel Belgrano (2021 - 2023).</h3>
-                <h3>Asistente de cátedra en Taller de Literatura Inglesa 3 e <!--ortografía!!!--> Estudios Interculturales en Lengua Inglesa 3 - ISFD N°18 (2021-2022).</h3>
-            </section>
-            <section>
-                <h2>HABILIDADES</h2>
-                <h3>Generative AI Leader - Google Skills</h3>
-                <h3>Adobe Photoshop</h3>
-                <h3>Adobe Illustrator</h3>
-                <h3>Adobe InDesign</h3>
-            </section>
-        </main>
-    <footer>
-        <p>CONTACTO</p>
-        <ul>
-            <li><img src="imgs/instalogo.png" alt="ig logo" width="25" height="25" /> <a href="https://www.instagram.com/boris__store">Instagram</a></li> <!--sumale target="_blank" para que se abra en una pestaña nueva y no se pierda tu página-->
-            <li><img src="imgs/behancelogo.png" alt="behance logo" width="25" height="25" /> <a href="https://www.behance.net/_emanuelroman">Behance</a></li> <!--idem-->
-        </ul>
-    </footer>
+            <main>
+                <h1>Emanuel Alvarez Roman</h1>
+
+                <section>
+                    <h2>FORMACIÓN ACADÉMICA</h2>
+                    <ul>
+                        <li>_ Profesor de Inglés - ISFD N°18 (Título honorífico).</li>
+                        <li>_ Licenciado en Gestión Educativa - UNLa (Título honorífico).</li>
+                        <li>_ Estudiante de Diseño y Comunicación Visual - UNLa (29 materias aprobadas de 36).</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>EXPERIENCIA LABORAL</h2>
+                    <ul>
+                        <li>_ Publishing administrativo y diseño editorial en Mawz Records e Indyana Records (2021 -
+                            Presente).</li>
+                        <li>_ Diseño gráfico y Community Manager en Boris Store (2018 - Presente).</li>
+                        <li>_ Asistente de cátedra en Lecto Comprensión en Inglés - Módulo 1 y 2 (Banfi) | UBA -
+                            Facultad de Psicología (2024 - Presente).</li>
+                        <li>_ Profesor de inglés de escuela secundaria y técnica en Provincia de Buenos Aires (2023 -
+                            Presente).</li> <!-- No identifico una solución para que no me queden dobles lineas de esta manera, si no aplico un balance me quedan las viudas -->
+                        <li>_ Profesor de inglés para el programa Becas Progresar Manuel Belgrano (2021 - 2023).</li>
+                        <li>_ Asistente de cátedra en Taller de Literatura Inglesa 3 e Estudios Interculturales en
+                            Lengua Inglesa 3 - ISFD N°18 (2021-2022).</li>
+                    </ul>
+                </section>
+
+                <section id="habilidades">
+                    <h2>HABILIDADES</h2>
+                    <ul>
+                        <li><img src="imgs/photoshoplogo.png" alt="Photoshop logo" width="100" height="100" /></li>
+                        <li><img src="imgs/illustratorlogo.png" alt="Illustrator logo" width="100" height="100" /></li>
+                        <li><img src="imgs/indesignlogo.png" alt="InDesign logo" width="100" height="100" /></li>
+                        <li><img src="imgs/googlegenlogo.png" alt="Google Gen Ia logo" width="100" height="100" /></li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <p>CONTACTO</p>
+                <ul>
+
+                    <li><img src="imgs/instalogo.png" alt="ig logo" width="25" height="25" /> <a
+                            href="https://www.instagram.com/boris__store" target="_blank">Instagram</a></li>
+                    <li><img src="imgs/behancelogo.png" alt="behance logo" width="25" height="25" /> <a
+                            href="https://www.behance.net/_emanuelroman" target="_blank">Behance</a></li>
+                </ul>
+            </footer>
+        </div>
     </div>
+    <div class="barra-final">
+        <img src="imgs/faviconcompu3.svg" alt="favicon" width="25" height="25" />
+        Cátedra Wischnévsky MMXXVI
+    </div>
+
 </body>
 
 </html>
