@@ -3,7 +3,6 @@
 
 html {
     background-color: #053920;
-    overflow-x: hidden; /*para el nivel de trabajo que hay ahora no debería ser necesario utilizar esta propiedad porque no estamos haciendo cosas muy locas, revisá el header y el footer con los vw y los position*/
 }
 
 @font-face {
@@ -17,14 +16,14 @@ html {
     font-family: "Heading secciones";
     src: url("fonts/HeadingNowTrial-54Regular.ttf") format("truetype");
     font-weight: bold;
-    font-style: bold; /*así no funciona font-style*/
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Heading textos";
     src: url("fonts/CutiveMono-Regular.ttf") format("truetype");
     font-weight: bolder;
-    font-style: bolder;/*así no funciona font-style*/
+    font-style: normal;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h2 {
     font-family: "Heading secciones", sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 h3 {
@@ -58,8 +57,8 @@ main ul {
     font-family: "Heading textos", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    line-height: 1.7rem;
-    list-style: none;
+    line-height: 1.5rem;
+    list-style: disc;
     padding: 0;
     margin: 0;
 }
@@ -67,7 +66,6 @@ main ul {
 main ul li {
     margin-bottom: 1rem;
 }
-
 
 body {
     margin: 0;
@@ -80,15 +78,10 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 32px;
+    margin-top: 4rem;
 }
 
 .barra-nav {
-    width: 100vw;
-    position: relative; /*por un lado no vimos position todavía, por otro lado lo estsás usando para solucionar algo que se resuelve cambiando el vw por %*/
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw; /*mmmmmm qué raro esto, no solemos usar números negativos porque son una solución a un error que se viene arrastrando de otro lado, además no está bueno usar medidas relaticas mara márgenes, acá es siempre px y si se pasa de los 80px es una señal de que podés resolver con flexbox*/
-    margin-right: -50vw; /*además podés declarar en una sola línea los márgenes*/
     background-color: #000000;
     padding: 12px;
 }
@@ -121,23 +114,11 @@ body {
     line-height: 0.8rem;
 }
 
-header {
-    flex-shrink: 0;
-    width: 136px;
-    margin-top: 1rem;
-}
-
-header img {
-    display: block;
-}
-
 .contenido {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
 }
-
-
 
 footer {
     font-family: "Heading secciones", sans-serif;
@@ -180,12 +161,6 @@ footer a:visited {
     color: #ffffff;
     padding: 32px;
     margin-top: 5rem;
-    width: 100vw; /*por alguna razón funciona mucho mejor utilizar porcentajes en los anchos en lugar de vw, a veces trae errores en algunos navegadores*/
-    position: relative; /*no vimos position!! esto se resuelve con flex*/
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     font-family: "Heading secciones", sans-serif;
     display: flex;
     justify-content: center;
